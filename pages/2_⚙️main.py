@@ -63,7 +63,7 @@ if uploaded_file is not None:
         st.header('Here are the recommended similar Clothing suggestions')
 
         # feature extract
-        features = feature_extraction('https://github.com/devmitanshu/StyleSuggest/tree/main/uploads/uploaded_file.name',model)
+        features = feature_extraction('https://github.com/devmitanshu/StyleSuggest/tree/main/uploads/display_image',model)
         #st.text(features)
         # recommendention
         indices = recommend(features,feature_list)
